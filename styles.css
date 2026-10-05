@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding-top: 80px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    background-color: lightgray;
+}
+
+/* Fixed Navigation bar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #222;
+    border-bottom: 4px solid darkblue;
+    z-index: 1000;
+}
+
+nav a:link {
+    color: lightblue;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+nav a:visited {
+    color: violet;
+}
+
+nav a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Page headings */
+.page-title {
+    text-align: center;
+}
+
+/* Home page */
+.home-title {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 48px;
+    background-color: white;
+    padding: 15px;
+}
+
+.home-title::first-letter {
+    font-size: 70px;
+}
+
+.home-box {
+    width: 60%;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: white;
+    border: 5px solid darkblue;
+    border-radius: 15px;
+}
+
+/* Image page */
+.image-page {
+    background-color: lightblue;
+}
+
+.gallery {
+    width: 80%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border: 4px solid #333;
+}
+
+/* Hidden page */
+.hidden-background {
+    background-color: lightgoldenrodyellow;
+}
+
+.hidden-page {
+    width: 70%;
+    margin: 40px auto;
+    line-height: 2;
+}
+
+.hidden-page p::first-line {
+    text-transform: uppercase;
+}
+
+.secret input {
+    display: none;
+}
+
+.secret label {
+    color: darkblue;
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hidden-word {
+    display: none;
+    background-color: yellow;
+    padding: 3px;
+}
+
+.secret input:checked ~ .hidden-word {
+    display: inline;
+}
